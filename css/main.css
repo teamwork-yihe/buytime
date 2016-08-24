@@ -1,0 +1,116 @@
+/* 购买 */
+body { width:100%;font-family: "PingFang SC";}
+.header { background-color: #343337; color:white;font-size:1.36rem;font-family: "PingFang";width: 100%;height:3.07rem;text-align: center;line-height: 3.07rem}
+.wrap-up { border: 1px solid white;width: 29.05rem;margin: 0 auto; margin-top:1.7rem;height:9.82rem;padding-bottom: 1rem;}
+.buybanner { width: 100%}
+.cake { font-size: 1.02rem;margin-top: 1.62rem;}
+.images-b { position: relative;top: 1.5rem;width: 1.02rem;}
+.times { font-size:1.02rem;margin-top: 0.17rem;padding-left: 1.28rem;}
+.jiange-top,.jiange-center,.jiange-bottom { border-top: 1px solid gray;background-color: #f7f7f7;width: 100%;height: 0.85rem;}
+.wrap-center,.wrap-bottom { margin: 0 auto;width: 29.05rem; position: relative;}
+.wrap-center .xinxi,.wrap-bottom div{  border-bottom: 1px solid gainsboro; display:block;width: 100%;height: 4.27rem;font-size: 1.02rem;font-family: "PingFang SC";} 
+.wrap-center input:nth-child(4){ border-bottom: 1px;}
+.change-img { bottom: 1.79rem;left: 7.43rem;position: absolute;}
+.wrap-bottom div .left {  color:#a0a0a0;float: left;margin-top: 2.13rem;}
+.wrap-bottom div .right { color: #ff0024; float: right;margin-top: 2.13rem;}
+.wrap-bottom div .huiyuan {  background-color: black;color: #f1df05;float: right;margin-top: 1.28rem;font-size: 0.76rem; height: 1.28rem;width: 6.12rem;text-align: center;line-height: 1.28rem;}
+.jiange-bottom { height: 4.27rem;}
+.footer { width: 100%;height: 4.7rem;text-align: right;}
+.footer span { color:#a0a0a0;font-size: 1.02rem;font-family: "PingFang SC";position: relative;top: 0.85rem;}
+.footer span:nth-child(2){ color: #ff0024; font-size: 1.19rem;font-weight: 900;}
+.pay { border: 1px solid white;background-color:#ff0024;border-radius: 4px;color: white;font-size: 1.28rem; width: 9.8rem;height: 2.77rem;margin: 0.85rem 0.85rem 0 0.64rem;}
+
+/*支付成功*/
+.pay-ok { border-bottom: 5px solid black; margin: 0 auto;width: 29.05rem;text-align: center;}
+.pay-ok img{ margin-top: 2.99rem;}
+.pay-ok .pays{ font-size: 1.53rem;font-family: "PingFang SC";margin-top: 1.02rem;}
+.pay-ok .payss { color: #a0a0a0; font-size: 1.19rem;font-family: "PingFang SC";margin-top: 1.45rem;margin-bottom: 2.26rem;}
+.pay-ok .payss span { color: #ff0024;}
+.jiange-di { border-top: 1px solid gray;background-color: #f7f7f7;width: 100%;height: 18.29rem;}
+.footer-d { background-color: black;border: 0.85rem solid #fbe806;height: 2.99rem;text-align: center;padding-bottom: 1rem;}
+.footer-d span { color: white; font-size: 0.98rem;font-family: "PingFang SC";margin-top: 1.02rem;margin-right: 0.42rem;}
+.footer-d span  img { margin: 1.02rem 0.42rem 0 0 ;}
+/*礼券无*/
+.gift-no { border: 1px solid #f7f7f7;width: 29.05rem;margin: 0 auto; margin-top:12.82rem;text-align: center;display: none;}
+/*礼券有*/
+.gift-have { border: 1px solid #f7f7f7;width: 29.05rem;margin: 0 auto;}
+.gift-top,.gift-bottom { border: 0.21rem solid black;width: 27rem;margin: 0 auto; margin-top: 2.99rem;}
+.gift-bottom { opacity: 0.5;}
+.borders { border: 2px solid black;background-image: url(../images/dian1.png);background-repeat: no-repeat;background-size: 100% 100%; position: relative;height: 8.43rem;width: 26.23rem;margin: 0.21rem;}
+.borders p { font-size: 1.02rem;font-family: "PingFang SC";margin-left: 1.28rem;}
+.borders p:nth-child(1){margin-top: 2.22rem;}
+.borders p:nth-child(2){margin-top: 1.11rem;}
+.borders p img { margin-right: 0.85em;width: 25px;}
+.money,.money-no { border-left: 0.42rem solid black;height: 3.41rem;width: 7.82rem;text-align: center;position: absolute;top: 1.71rem;right:0;}
+.money span,.money-no span { color:#ff0024; font-size:3.07rem;font-family: "PingFang SC";font-weight: 800;position: relative;top: 1.71rem;}
+.money .yuan,.money-no .yuan {  font-size: 1.53rem;font-family: "PingFang SC";}
+.money-no span,.money .yuan { color: black;margin-left: 0.85rem;}
+
+/********* order.html 订单页面 *********/
+body{background-color:#f7f7f7;font-family:PingFang}
+.header { border: 1px;background-color: #343337; color:white;font-size:3.2rem;font-family: "PingFang";width: 100%;height:7.2rem;text-align: center;line-height: 7.2rem}
+.nav{position:relative;width:32rem;height:7rem;text-align:center;background:#fefefe;border-bottom:1px solid #ccc}
+.tab{display:inline-block;width:15.5rem;height:6rem;line-height:6rem;color:#aaa}
+.tab[choose=choose]{color:#000}
+.slide{position:absolute;bottom:0;left:0;width:16rem;-webkit-transition:all 1s;-moz-transition:all 1s;-ms-transition:all 1s;-o-transition:all 1s;transition:all 1s}
+.slide div{margin:0 auto;width:4.5rem;height:.8rem;background:#000}
+.no-order{margin-top:6rem;margin-left:9rem;width:14rem}
+ul{display:none;}
+li{margin-bottom:3rem;border-bottom:1px solid #ccc;background:#fff}
+.banner{display:block;margin:0 auto;margin-top:1rem;padding-top:3rem;width:30rem}
+.order-info{margin-top:3rem;width:30rem;margin-left:1rem}
+.title{height:4rem;border-bottom:1px solid #ccc;font-size:1.6rem}
+.fail-order .title{border:none;height:3rem;font-size: 1.6rem}
+.fail-order .time{padding-bottom:2rem;border-bottom:1px solid #ccc;font-size: 1.4rem;}
+.fail-order .time img{width:1.4rem}
+.fail-order .time p{display:inline}
+.place{margin:2rem 0 0 0;padding-bottom:2rem;border-bottom:1px solid #ccc;font-size:1.4rem;}
+.place img{width:1.4rem}
+.place p{display:inline-block;height:24px;line-height:24px}
+.price{padding:2rem 0;text-align:right;color:red;font-size:1rem}
+.bottom-div{display:none}
+.bottom{text-align:center;margin-top:6rem;color:#aaa}
+.line{margin:0 auto;width:10rem;height:1px;background:#aaa;text-align:center;margin-top:5rem;margin-bottom:3rem}
+.order-footer{margin:0 auto;width:28rem;height:5rem;background:#000}
+.order-footer img{margin-top:1rem;margin-left:5rem;width:8rem;}
+.order-footer a{display:inline-block;margin-top:1.8rem;margin-left:1rem;padding-left:.8rem;font-size:.9rem;color:#fbe806;vertical-align:top;border-left:1px solid #fbe806}
+.order-footer .right{float:right;margin:0;margin-left:1rem;height:1.1rem;width:auto;}
+
+/********* user.html 会员页面 *********/
+body{background-color:#f7f7f7;font-family:PingFang}
+.header { border: 1px;background-color: #343337; color:white;font-size:3.2rem;font-family: "PingFang";width: 100%;height:7.2rem;text-align: center;line-height: 7.2rem}
+.user-img{margin:0 auto;margin-top:1rem;padding-top:1rem;width:30rem;height:13rem;background:url(../images/user.png) no-repeat 100%;background-size:100% 100%}
+.user-img .item{margin-left:2rem;margin-bottom:1rem}
+.user-img .item img{height:1rem}
+.user-img span{color:#fff;font-size:1rem}
+.user-img p{color:#fbe806;font-size: .7rem;}
+.user-img .info{margin:0 auto;margin-top:1rem;width:29rem;height:4rem;background:#000}
+.user-img .info img{margin-top:1rem;margin-left:3.5rem;width:8rem;}
+.user-img .text{display:inline-block;vertical-align:top;margin-top:1rem;margin-left:2rem;padding:0 1rem;line-height:1rem;border-right:1px solid #fbe806;border-left:1px solid #fbe806}
+.user-img .num{margin-right:4rem;text-align:right;color:#fbe806;font-size:.8rem}
+.user-title{margin:0 auto;margin-top:2rem;width:9rem;height:4rem;line-height:4rem;text-align:center;background:#000;color:#FFF;font-size:1rem}
+.tip{margin:0 auto;margin-top:2rem;width:30rem;font-size:1rem}
+.sep{margin:3rem auto;width:5rem;height:.5rem;background:#000}
+.tip-item{margin:0 auto;margin-top:1rem;width:30rem;font-size:1rem}
+.bottom{text-align:center;margin-top:6rem;color:#aaa;font-size:1rem}
+.line{margin:0 auto;width:7rem;height:1px;background:#aaa;text-align:center;margin-top:2rem;margin-bottom:2rem}
+.user-footer{margin:0 auto;margin-bottom:2rem;width:28rem;height:5rem;background:#000}
+.user-footer img{margin-top:1rem;margin-left:5rem;width:8rem;}
+.user-footer a{display:inline-block;margin-top:1.8rem;margin-left:1rem;padding-left:.8rem;font-size:.9rem;color:#fbe806;vertical-align:top;border-left:1px solid #fbe806}
+.user-footer .right{float:right;margin:0;margin-left:1rem;height:1.1rem;width:auto;}
+
+
+@media only screen and (min-width: 320px)  {
+	html { font-size:62.5%; }
+	.borders {  height: 9.43rem;}
+}
+@media only screen and (min-width: 640px)  {
+	html { font-size:125%; }
+	.borders {  height: 7.43rem;}
+}
+@media only screen and (min-width: 750px)  {
+	html { font-size:146.48%; }
+}
+@media only screen and (min-width:1080px)  {
+	html { font-size:210.9375%; }
+}

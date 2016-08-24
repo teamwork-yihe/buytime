@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>礼券</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<style type="text/css">
+			body{
+				background-color: #f7f7f7;
+			}
+		</style>
+	</head>
+	<body>
+		<!--head-->
+		<div class="header">
+			Buytime
+		</div>
+		<!--body-->	
+		<!--wuliquan-->
+		<div class="gift-no">
+			<img src="../images/nonequan.png"/>
+		</div>
+		<div class="gift-have">
+			<div class="gift-top use">
+				<div class="borders">
+					<p><img src="../images/heart.png"/>使用条件：无</p>
+					<p><img src="../images/clock.png"/>到期时间：2020-12-12</p>
+					<div class="money">
+						<span class="money-num">10</span><span class="yuan">元</span>
+					</div>
+				</div>
+			</div>
+			<div class="gift-bottom timeout">
+				<div class="borders">
+					<p><img src="../images/heart.png"/>使用条件：无</p>
+					<p><img src="../images/clock.png"/>到期时间：2020-12-12</p>
+					<div class="money-no">
+						<span class="money-num">5</span><span class="yuan">元</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="../js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".use").on("tap",function(){
+			var numStr = $(this).find(".money-num").html();
+			localStorage.setItem("liquan-can-use-money", numStr);
+			location.href="index.html";
+		});
+	</script>
+</html>
